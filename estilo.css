@@ -1,0 +1,348 @@
+body {
+  font-size: 16px;
+  font-family: helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.estructura {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.limpiar {
+  clear: both;
+}
+
+/* 1. CABECERA AZUL CIELO (100% ANCHO CON CONTENIDO 960px) */
+#cabecera_wrapper {
+  width: 100%;
+  background-color: #dbeffd;
+  padding: 25px 0;
+}
+
+#cabecera {
+  height: 80px;
+}
+
+#logo_contenedor {
+  float: left;
+  width: 300px;
+  text-align: left;
+}
+
+#logo_contenedor img {
+  width: 110px;
+}
+
+#datos_alumno {
+  float: right;
+  width: 300px;
+  text-align: right;
+  font-size: 14px;
+  color: #0b5853;
+  font-weight: bold;
+}
+
+#datos_alumno p {
+  margin: 3px 0;
+}
+
+/* 2. MENU BLANCO CON PESTAÑA ACTIVA VERDE */
+#menu_wrapper {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+#menu {
+  height: 45px;
+  text-align: center;
+}
+
+#menu a {
+  color: #0b5853;
+  text-decoration: none;
+  padding: 13px 30px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#menu a.activo {
+  background-color: #0b5853;
+  color: white;
+}
+
+#menu a:hover {
+  background-color: #053f3b;
+  color: white;
+}
+
+/* 3. CONTENIDO PRINCIPAL */
+#contenido {
+  text-align: left;
+  padding: 0;
+  margin-top: 0;
+}
+
+/* 4. BANNER SLIDE PRINCIPAL (100% ANCHO Y PEGADO AL MENU) */
+#banner_principal {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.img_banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#texto_banner {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+#texto_banner h1 {
+  font-size: 60px;
+  margin: 0;
+  font-weight: bold;
+}
+
+#texto_banner p {
+  font-size: 20px;
+  margin: 5px 0 20px 0;
+  font-style: italic;
+}
+
+/* BANNER SERVICIOS Y CONTACTO */
+#banner_servicios, #banner_contacto {
+  width: 100%;
+  background-color: #053f3b;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#banner_servicios h1, #banner_contacto h1 {
+  font-size: 45px;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* SECCIONES DE TEXTO */
+.centrar_seccion {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.titulo_verde {
+  color: #0b5853;
+  font-size: 34px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.titulo_verde_grande {
+  color: #0b5853;
+  font-size: 38px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.subtitulo_gris {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* 5. TRES COLUMNAS EN INDEX (IMAGEN CENTRAL MAS LARGA) */
+#tres_columnas {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  clear: both;
+  overflow: hidden;
+}
+
+.columna_item {
+  float: left;
+  width: 300px;
+  margin-right: 30px;
+}
+
+.columna_item:last-child {
+  margin-right: 0;
+}
+
+.columna_item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.columna_central img {
+  height: 380px;
+}
+
+.columna_item h3 {
+  color: #0b5853;
+  font-size: 20px;
+  margin: 15px 0 10px 0;
+  font-weight: bold;
+}
+
+.columna_item p {
+  color: #666;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* BOTONES */
+.btn_reserva {
+  background-color: #0b8b82;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* FORMULARIO CONTACTO 2x2 */
+#caja_formulario_wrapper {
+  width: 100%;
+  margin: 30px 0;
+}
+
+#caja_formulario {
+  background-color: #053f3b;
+  padding: 40px 30px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.bloque_input {
+  width: 420px;
+  margin-bottom: 20px;
+}
+
+.col_izquierda {
+  float: left;
+}
+
+.col_derecha {
+  float: right;
+}
+
+.bloque_input input {
+  width: 100%;
+  padding: 15px;
+  background-color: #125752;
+  border: 1px solid #1a6e68;
+  color: white;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.bloque_input input::placeholder {
+  color: #a3d4d0;
+}
+
+.bloque_boton {
+  clear: both;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#btn_request {
+  width: 100%;
+  padding: 15px;
+  background-color: #0b8b82;
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.seccion_texto_servicios {
+  padding: 10px 0;
+  color: #444;
+}
+
+.seccion_texto_servicios h2 {
+  color: #0b5853;
+  font-size: 22px;
+}
+
+.seccion_texto_servicios p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* 6. PIE DE PAGINA (100% ANCHO) */
+#pie_wrapper {
+  width: 100%;
+  background-color: #053f3b;
+  padding: 30px 0;
+  margin-top: 50px;
+  clear: both;
+}
+
+#pie {
+  height: 60px;
+}
+
+#pie_logo {
+  float: left;
+  width: 150px;
+  text-align: left;
+}
+
+#pie_logo img {
+  width: 70px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+#pie_texto {
+  float: left;
+  width: 550px;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+}
+
+#pie_texto h2 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: normal;
+}
+
+#pie_redes {
+  float: right;
+  width: 200px;
+  text-align: right;
+  padding-top: 15px;
+}
+
+.btn_instagram {
+  background-color: white;
+  color: #053f3b;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 3px;
+}
